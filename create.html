@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="ul-menu">
+            <li class="li-op"><a href="create.html">Create books</a> </li>
+            <li class="li-op"><a href="index.html">Search books</a></li>
+        </ul>
+    </div>
+    <form action="create.php" method="get" id="book-form">
+        <!-- input contents -->
+        <div class="input-content">
+            <h1>CREATE A NEW BOOK</h1>
+            <label for="book_name_create" class="lavel">Write the name of the book: </label>
+            <input type="text" class="text-input" id="book-name" name="book_name_create" placeholder="Write here">
+        </div>
+        <div class="input-content">
+            <label for="book_autor_create" class="lavel">Write the name of the autor: </label>
+            <input type="text" class="text-input" id="book-autor" name="book_autor_create" placeholder="Write here">
+        </div>
+        <div class="input-content">
+            <label for="book_category_create" class="lavel">Choose the category of the book: </label>
+            <select name="book_category_create" class="category-select">
+                <option value="none">All the categories</option>
+                <option value="action">Action</option>
+                <option value="science_fiction">Science Fiction</option>
+                <option value="adventure">Adventure</option>
+                <option value="romance">Romance</option>
+                <option value="graphic_novel">Graphic Novel</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+
+        </div>
+        <div class="input-content">
+            <input type="submit" value="submit" class="submit">
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
