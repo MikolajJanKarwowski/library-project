@@ -18,35 +18,38 @@
             <li class="li-op"><a href="delete.html">Delete books</a></li>
         </ul>
     </div>
-    <form action="index.php" method="get" id="book-form">
+    <form action="delete.php" method="get" id="book-form">
         <div class="input-content">
-            <h1>SEARCH A BOOK</h1>
-            <label for="book_name" class="lavel">Write the name of the book: </label>
-            <input type="text" class="text-input" id="book-name" name="book_name" placeholder="Write here">
+            <h1>SEARCH A BOOK TO BE DELETED</h1>
+            <label for="book_id" class="lavel">Write the id of the book: </label>
+            <input type="text" class="text-input" id="book-id" name="book_id" placeholder="Write here">
         </div>
-        <div class="input-content">
+        <div class="input-content ">
+            <label for="book_name" class="lavel">Write the name of the book: </label>
+            <input type="text" class="text-input " id="book-name " name="book_name" placeholder="Write here">
+        </div>
+        <div class="input-content ">
             <label for="book_autor" class="lavel">Write the name of the autor: </label>
             <input type="text" class="text-input" id="book-autor" name="book_autor" placeholder="Write here">
         </div>
 
-        <div class="input-content">
+        <div class="input-content ">
             <label for="book_category" class="lavel">Choose the category of the book: </label>
             <select name="book_category" class="category-select">
-                <option value="none">All the categories</option>
-                <option value="action">Action</option>
-                <option value="science_fiction">Science Fiction</option>
-                <option value="adventure">Adventure</option>
-                <option value="romance">Romance</option>
-                <option value="graphic_novel">Graphic Novel</option>
-                <option value="fantasy">Fantasy</option>
+                <option value="none ">All the categories</option>
+                <option value="action ">Action</option>
+                <option value="science_fiction ">Science Fiction</option>
+                <option value="adventure ">Adventure</option>
+                <option value="romance ">Romance</option>
+                <option value="graphic_novel ">Graphic Novel</option>
+                <option value="fantasy ">Fantasy</option>
             </select>
-
         </div>
         <div class="input-content">
             <input type="submit" value="submit" class="submit">
         </div>
     </form>
-    <script src="form.js"></script>
+
 </body>
 
 </html>

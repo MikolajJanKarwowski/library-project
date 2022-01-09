@@ -13,6 +13,7 @@
             <li class="li-op"><a href="create.html">Create books</a> </li>
             <li class="li-op"><a href="index.html">Search books</a></li>
             <li class="li-op"><a href="update.html">Update books</a></li>
+            <li class="li-op"><a href="delete.html">Delete books</a></li>
         </ul>
     </div>
     <?php

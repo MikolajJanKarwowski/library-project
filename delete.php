@@ -24,9 +24,6 @@
                 $book_name=$_GET["book_name"];
                 $book_category=$_GET["book_category"];
                 $book_autor=$_GET["book_autor"];
-                $book_name_up=$_GET["book_name_up"];
-                $book_category_up=$_GET["book_category_up"];
-                $book_autor_up=$_GET["book_autor_up"];
                 //connecting to the data base
                 $servidor = "localhost";
                 $usuario = "root";
@@ -35,16 +32,14 @@
                 // we should have create this db
                 mysqli_select_db($conexion,"library");
                 //validating the variable
-                if(isset($book_name) && isset($book_category) && isset($book_autor) && isset($book_name_up) && isset($book_category_up) && isset($book_autor_up) && isset($book_id)){
-                    $query = "UPDATE books 
-                    SET bookName = '$book_name_up',bookAutor = '$book_autor_up',bookCategory='$book_category_up' 
-                    WHERE bookId = '$book_id' AND bookName = '$book_name' AND bookAutor = '$book_autor' AND bookCategory='$book_category'";
+                if(isset($book_name) && isset($book_category) && isset($book_autor) && isset($book_id)){
+                    $query = "DELETE FROM books WHERE bookId='$book_id' AND bookName='$book_name' AND bookCategory='$book_category' AND bookAutor='$book_autor'";
                     $result = mysqli_query($conexion,$query);
                     if(!$result){
                         echo "<h2 class='title-search error'>This book is not in the DataBase</h2>";
                     }
                     else{
-                        echo "<h2 class='title-search succes'>The book has been updated</h2>";
+                        echo "<h2 class='title-search succes'>The book has been Deleted</h2>";
                     }
                     
                      
@@ -54,7 +49,7 @@
                 }
                 mysqli_close($conexion);
     ?>
-        <a href="update.html">Volver</a>
+        <a href="delete.html">Volver</a>
     </div>
 </body>
 </html>
