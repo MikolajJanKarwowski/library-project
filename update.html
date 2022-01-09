@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="ul-menu">
+            <li class="li-op"><a href="create.html">Create books</a> </li>
+            <li class="li-op"><a href="index.html">Search books</a></li>
+            <li class="li-op"><a href="update.html">Update books</a></li>
+        </ul>
+    </div>
+    <form action="update.php" method="get" id="book-form">
+        <div class="input-content">
+            <h1>SEARCH A BOOK TO BE UPDATED</h1>
+            <label for="book_id" class="lavel">Write the id of the book: </label>
+            <input type="text" class="text-input" id="book-id" name="book_id" placeholder="Write here">
+        </div>
+        <div class="input-content ">
+            <label for="book_name" class="lavel">Write the name of the book: </label>
+            <input type="text" class="text-input " id="book-name " name="book_name" placeholder="Write here">
+        </div>
+        <div class="input-content ">
+            <label for="book_autor" class="lavel">Write the name of the autor: </label>
+            <input type="text" class="text-input" id="book-autor" name="book_autor" placeholder="Write here">
+        </div>
+
+        <div class="input-content ">
+            <label for="book_category" class="lavel">Choose the category of the book: </label>
+            <select name="book_category" class="category-select">
+                <option value="none ">All the categories</option>
+                <option value="action ">Action</option>
+                <option value="science_fiction ">Science Fiction</option>
+                <option value="adventure ">Adventure</option>
+                <option value="romance ">Romance</option>
+                <option value="graphic_novel ">Graphic Novel</option>
+                <option value="fantasy ">Fantasy</option>
+            </select>
+
+        </div>
+
+        <div class="input-content ">
+            <h1>NEW BOOK DATA</h1>
+            <label for="book_name_up" class="lavel">Write the name of the book: </label>
+            <input type="text" class="text-input" id="book-name_up" name="book_name_up" placeholder="Write here ">
+        </div>
+        <div class="input-content">
+            <label for="book_autor_up" class="lavel">Write the name of the autor: </label>
+            <input type="text" class="text-input" id="book-autor_up" name="book_autor_up" placeholder="Write here ">
+        </div>
+
+        <div class="input-content ">
+            <label for="book_category_up" class="lavel">Choose the category of the book: </label>
+            <select name="book_category_up" class="category-select">
+                <option value="none ">All the categories</option>
+                <option value="action ">Action</option>
+                <option value="science_fiction ">Science Fiction</option>
+                <option value="adventure ">Adventure</option>
+                <option value="romance ">Romance</option>
+                <option value="graphic_novel ">Graphic Novel</option>
+                <option value="fantasy ">Fantasy</option>
+            </select>
+
+        </div>
+        <div class="input-content">
+            <input type="submit" value="submit" class="submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
